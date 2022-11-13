@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flex Assignment 02</title>
+    </head>
+    <style>
+        header{
+            display: flex;
+            background-color: rgb(236, 61, 61);
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        #Container{
+            display: flex;
+            border: 2px solid black;
+        }
+        #Sidebar{
+            order: 2;
+            flex-grow: 1;
+            background-color: rgb(190, 189, 189);
+            border: 2px solid rgb(105, 104, 104);
+        }
+        #Products{
+            flex: 11;
+            background-color: rgb(221, 212, 212);
+        }
+        #Sidebar>a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .Subproduct{
+            order: 1;
+            margin: 5px;
+            display: flex;
+        }
+        .Items{
+            height: 150px;
+            width: 50px;
+            margin: 5px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        #Sidebar>a:hover{
+            color: white;
+        }
+    </style>
+    <body>
+        <header>
+            <p>Classroom</p>
+        </header>
+        <section id="Container">
+                <div id="Sidebar">
+                    <a href="#">Classes</a>
+                    <a href="#">Calender</a>
+                    <a href="#">Notifications</a>
+                    <a href="#">Archieved Classes</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Help</a>
+                </div>
+                <div id="Products" >
+                    <div class="Subproduct" >
+                        <div class="Items" style="background-color : rgb(73, 201, 73);">
+                            <h2>BCA (C Programming)</h2>
+                            <p>2022-2023</p>
+                        </div>
+                        <div class="Items" style="background-color : rgb(121, 121, 231);">
+                            <h2>BCA (Statistics)</h2>
+                            <p>2022-2023</p>
+                        </div>
+                        <div class="Items" style="background-color : rgb(226, 84, 108);">
+                            <h2>BCA (Fundamentals Of Computer)</h2>
+                            <p>2022-2023</p>
+                        </div>
+                    </div>
+                    <div class="Subproduct">
+                        <div class="Items" style="background-color : rgb(235, 60, 235)">
+                            <h1>BCA (Financial Accounting)</h1>
+                            <p>2022-2023</p>
+                        </div>
+                        <div class="Items" style="background-color : rgb(133, 129, 129)">
+                            <h1>BCA (CPP)</h1>
+                            <p>2022-2023</p>
+                        </div>
+                        <div class="Items" style="background-color : rgb(161, 223, 39);">
+                            <h1>BCA (Cost Accounting)</h1>
+                            <p>2022-2023</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>
