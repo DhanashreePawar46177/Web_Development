@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flex Assignment 01 CSS</title>
+    </head>
+    <style>
+        header{
+            display: flex;
+            background-color: rgb(8, 190, 181);
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        #Container{
+            display: flex;
+        }
+        #Sidebar{
+            flex-grow: 1;
+            background-color: rgb(182, 218, 216);
+        }
+        #Products{
+            flex: 11;
+            background-color: rgb(220, 250, 248);
+        }
+        #Sidebar>a{
+            text-decoration: none;
+            color: navy;
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .Subproduct{
+            margin: 5px;
+            display: flex;
+            
+        }
+        .Items{
+            height: 150px;
+            margin: 5px;
+            flex-grow: 1;
+            background-color: rgb(144, 209, 206);
+            text-align: center;
+        }
+        #Sidebar>a:hover{
+            color: blue;
+        }
+    </style>
+    <body>
+        <header>
+            <p>Telegram</p>
+        </header>
+        <section id="Container">
+                <div id="Sidebar">
+                    <a href="#">New Group</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Calls</a>
+                    <a href="#">People Nearby</a>
+                    <a href="#">Saved Messages</a>
+                    <a href="#">Setting</a>
+                </div>
+                <div id="Products" >
+                    <div class="Subproduct">
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="Subproduct">
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                        <div class="Items">
+                            <img src="../Img/Telegram_logo.png" alt="Telegram_logo" height="150px" width="150px">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>
