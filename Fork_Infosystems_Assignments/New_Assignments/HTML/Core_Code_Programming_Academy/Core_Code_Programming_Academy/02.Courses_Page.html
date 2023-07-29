@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CORE CODE PROGRAMMING ACADEMY</title>
+        <link rel="icon" type="image/x-icon" href="../Assets/Icon_Img.ico">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-image:linear-gradient(rgba(143, 33, 88, 0.7),rgba(49, 42, 153, 0.7)), url(../Assets/Courses_Bac_Img.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%; 
+                height: 625px;  
+            }
+            .Name{
+                padding: 15px;
+                text-align: center;
+                color: white;
+                background-image: linear-gradient(to top right ,rgb(179, 48, 113),rgb(41, 41, 161));
+                border-bottom: 1px solid
+            }
+            .NavBar{
+                text-align: center;
+                background-image: linear-gradient(to bottom left ,rgb(179, 48, 113),rgb(41, 41, 161));
+            }
+            .NavBar>div{
+                display: inline-block;
+                padding: 10px;
+                margin: 10px;
+            }
+            .NavBar>div>a{
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+            }
+            .NavBar>div>a:hover{
+                background-image: linear-gradient(to top right ,rgb(202, 44, 123),rgb(48, 48, 204));
+            }
+            .CourseTable{
+                height: 440px;
+                width: 80%;
+                margin: 10px 140px;
+                border: 2px solid white;
+                border-collapse: collapse;
+            }
+            .Title>td{
+                padding-bottom: 15px;
+            }
+            .Title>td>a{
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+            }
+            .Title>td>a:hover{
+                background-image: linear-gradient(to bottom left ,rgb(202, 44, 123),rgb(48, 48, 204));
+            }
+            .Sect{
+                text-align: center;
+            }
+            .Sect>h1{
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="Name">
+            <div><h1>CORE CODE PROGRAMMING ACADEMY</h1></div>
+        </header>
+        <header class="NavBar">
+            <div><a href="./01.Home_Page.html">Home</a></div>
+            <div><a href="./02.Courses_Page.html">Courses</a></div>
+            <div><a href="./05.Student_Registration_Page.html">Student Registration</a></div>
+            <div><a href="./03.Contact_Page.html">Contact</a></div>
+            <div><a href="./04.About_Us_Page.html">About Us</a></div>
+        </header>
+        <section class="Sect">
+            <h1>Our Most Popular Courses</h1>
+            <table class="CourseTable">
+                <tr>
+                    <td><img src="../Assets/C_Programming.jpg" alt="C Programming Logo" height="150px" width="150px"></td>
+                    <td><img src="../Assets/CPP_Logo.jpg" alt="CPP Logo" height="150px" width="150px"></td>
+                    <td><img src="../Assets/C_Sharp_Logo.jpg" alt="C Sharp Logo" height="150px" width="150px"></td>
+                </tr>
+                <tr class="Title">
+                    <td><a href="">C PROGRAMMING</a></td>
+                    <td><a href="">CPP</a></td>
+                    <td><a href="">C SHARP</a></td>
+                </tr>
+                <tr>
+                    <td><img src="../Assets/Web_Logo.jpg" alt="Web Technology Logo" height="150px" width="150px"></td>
+                    <td><img src="../Assets/PHP_Logo.jpg" alt="PHP Logo" height="150px" width="150px"></td>
+                    <td><img src="../Assets/Java_Logo.jpg" alt="Java Logo" height="150px" width="150px"></td>
+                </tr>
+                <tr class="Title">
+                    <td><a href="">HTML,CSS,JAVASCRIPT</a></td>
+                    <td><a href="">PHP</a></td>
+                    <td><a href="">JAVA</a></td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
