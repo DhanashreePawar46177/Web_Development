@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <!-- CSS Position : static(default), relative, absolute, fixed, sticky -->
+    <style>
+        body{
+            height: 900px;
+        }
+        .box{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            border: 2px solid navy;
+            margin: 2px;
+        }
+        #box1{
+            position: static;
+        }
+        #box2{
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+        #box3{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        #box4{
+            position: fixed;
+            right: 500px;
+            top: 200px;
+        }
+        #box5{
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">01-Static</div>
+    <div class="box" id="box2">02-Relative</div>
+    <div class="box" id="box3">03-Absolute</div>
+    <div class="box" id="box4">04-Fixed</div>
+    <div class="box" id="box5">05-Sticky</div>
+</body>
+</html>
